@@ -211,7 +211,7 @@ EOF
  }
 
 case "${num}" in
-1) bash <(curl -Ls https://xn--ss-8ja.vn/xrayrlimit/install.sh)
+1) bash <(curl -Ls https://raw.githubusercontent.com/localhostvn/xrayr/main/install2.sh)
 openssl req -newkey rsa:2048 -x509 -sha256 -days 365 -nodes -out /etc/XrayR/zicboard.crt -keyout /etc/XrayR/zicboard.key -subj "/C=JP/ST=Tokyo/L=Chiyoda-ku/O=Google Trust Services LLC/CN=google.com"
 cd /etc/XrayR
   cat >config.yml <<EOF
